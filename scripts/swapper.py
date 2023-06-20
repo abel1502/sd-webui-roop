@@ -10,7 +10,7 @@ import numpy as np
 from PIL import Image
 
 import insightface
-import onnxruntime
+# import onnxruntime  # Note: unnecessary?
 
 from modules.face_restoration import FaceRestoration, restore_faces
 from modules.upscaler import Upscaler, UpscalerData
