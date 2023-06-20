@@ -24,5 +24,4 @@ if not os.path.exists(models_dir):
 if not os.path.exists(model_path):
     download(model_url, model_path)
 
-print("Checking roop requirements")
 launch.run_pip("install -r requirements.txt", "sd-webui-roop requirements")
