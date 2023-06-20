@@ -11,7 +11,6 @@ from PIL import Image
 
 import insightface
 import onnxruntime
-from scripts.cimage import convert_to_sd
 
 from modules.face_restoration import FaceRestoration, restore_faces
 from modules.upscaler import Upscaler, UpscalerData
@@ -108,9 +107,8 @@ def swap_face(
     upscale_options: Union[UpscaleOptions, None] = None,
 ) -> ImageResult:
     result_image = target_img
-    converted = convert_to_sd(target_img)
-    scale, fn = converted[0], converted[1]
-    if model is not None and not scale:
+    fn = tempfile.NamedTemporaryFile(delete=False, suffix=".png")
+    if model is not None:
         if isinstance(source_img, str):  # source_img is a base64 string
             import base64, io
             if 'base64,' in source_img:  # check if the base64 string has a data URL scheme
