@@ -8,7 +8,7 @@ This is an extension for StableDiffusion's [AUTOMATIC1111 web-ui](https://github
 
 This software is meant to be a productive contribution to the rapidly growing AI-generated media industry. It will help artists with tasks such as animating a custom character or using the character as a model for clothing etc.
 
-~~The developers of this software are aware of its possible unethical applicaitons and are committed to take preventative measures against them. It has a built-in check which prevents the program from working on inappropriate media including but not limited to nudity, graphic content, sensitive material such as war footage etc. We will continue to develop this project in the positive direction while adhering to law and ethics. This project may be shut down or include watermarks on the output if requested by law.~~
+~~The developers of this software are aware of its possible unethical applications and are committed to take preventative measures against them. It has a built-in check which prevents the program from working on inappropriate media including but not limited to nudity, graphic content, sensitive material such as war footage etc. We will continue to develop this project in the positive direction while adhering to law and ethics. This project may be shut down or include watermarks on the output if requested by law.~~
 
 _Patched by abel1502 to eradicate the censorship introduced in favor of the above paragraph. Legality and ethics are the responsibility of the end user, not the tool._
 
@@ -33,7 +33,7 @@ First of all, if you can't install it for some reason, don't open an issue here.
 #### Getting good quality results
 First of all, make sure the "Restore Face" option. You can also try the "Upscaler" option or for more finer control, use an upscaler from the "Extras" tab.
 
-For even better quality, use img2img with denoise set to `0.1` and gradually increase it until you get a balance of quality and resembelance.
+For even better quality, use img2img with denoise set to `0.1` and gradually increase it until you get a balance of quality and resemblance.
 
 #### Replacing specific faces
 If there are multiple faces in an image, select the face numbers you wish to swap using the "Comma separated face number(s)" option.
